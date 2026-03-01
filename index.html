@@ -1,10 +1,11 @@
+<!-- index.html -->
 <!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>10 The Structure Enforcer</title>
-    <meta name="description" content="A discipline system for serious traders. Obey structure. Track rules. Stay green." />
+    <meta name="description" content="A discipline system for serious traders. Obey structure. Stay green." />
     <link rel="stylesheet" href="./style.css" />
   </head>
 
@@ -12,13 +13,16 @@
     <header class="topbar">
       <div class="container topbar-inner">
         <a class="brand" href="#">
+          <!-- Put your logo here: /assets/10-logo.png -->
           <img
             class="logo"
             src="./assets/10-logo.png"
             alt="10 logo"
             width="44"
             height="44"
+            loading="eager"
           />
+
           <div class="brand-text">
             <div class="brand-title">10 The Structure Enforcer</div>
             <div class="brand-subtitle">Obey Structure. Stay green.</div>
@@ -28,12 +32,13 @@
         <nav class="topbar-actions">
           <a class="btn btn-ghost" href="#how">How it works</a>
           <a class="btn btn-ghost" href="#download">Download</a>
+          <a class="btn btn-primary btn-small" href="#buy">Buy</a>
         </nav>
       </div>
     </header>
 
     <main>
-      <section class="hero">
+      <section class="hero" id="top">
         <div class="container hero-inner">
           <div class="hero-copy">
             <h1>Discipline you can measure.</h1>
@@ -50,28 +55,40 @@
             </div>
 
             <div class="cta-row" id="download">
-              <a class="btn btn-primary" href="https://apple.co/40ucWTr" target="_blank" rel="noreferrer">
+              <!-- Replace these three with your real links -->
+              <a class="btn btn-secondary"
+                 href="https://apple.co/40ucWTr "
+                 target="_blank"
+                 rel="noreferrer">
                 Download iOS
               </a>
 
-              <a class="btn btn-secondary" href="https://apple.co/40ucWTr" target="_blank" rel="noreferrer">
+              <a class="btn btn-secondary"
+                 href="https://apple.co/40ucWTr "
+                 target="_blank"
+                 rel="noreferrer">
                 Download Android
               </a>
 
-              <a class="btn btn-ghost" href="https://discord.gg/pFdKWajE00000" target="_blank" rel="noreferrer">
+              <a class="btn btn-ghost"
+                 href="https://discord.gg/wNbnpNjQ"
+                 target="_blank"
+                 rel="noreferrer">
                 Join Discord
               </a>
-	<a class="btn btn-primary" 
-   href="https://buy.stripe.com/3cI28k5sYcAT72I994dfG00 
-   target="_blank">
-   Buy Now
-</a>
 
-
+              <!-- Replace with your real Stripe Payment Link -->
+              <a class="btn btn-primary"
+                 id="buy"
+                 href="https://buy.stripe.com/3cI28k5sYcAT72I994dfG00"
+                 target="_blank"
+                 rel="noreferrer">
+                Buy Now
+              </a>
             </div>
 
             <div class="micro">
-              Replace the links above with your real App Store, Google Play, and Discord links.
+              Replace the links above with your real App Store, Google Play, Discord, and Stripe links.
             </div>
           </div>
 
@@ -140,7 +157,10 @@
           </p>
 
           <div class="cta-row">
-            <a class="btn btn-primary" href="https://apple.co/40ucWTr" target="_blank" rel="noreferrer">
+            <a class="btn btn-primary" href="https://buy.stripe.com/3cI28k5sYcAT72I994dfG00"  target="_blank" rel="noreferrer">
+              Buy Now
+            </a>
+            <a class="btn btn-secondary" href="https://apple.co/40ucWTr" target="_blank" rel="noreferrer">
               Download iOS
             </a>
             <a class="btn btn-secondary" href="https://apple.co/40ucWTr" target="_blank" rel="noreferrer">
@@ -164,9 +184,9 @@
         <div class="footer-right">
           <a href="#download">Download</a>
           <a href="#how">How it works</a>
+          <a href="#buy">Buy</a>
         </div>
       </div>
     </footer>
   </body>
 </html>
-
